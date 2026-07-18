@@ -1,0 +1,6 @@
+需要通过划分晶圆不同区域，不同区域分别使用最小二乘拟合slope来表征Beam在WF不同区域的刻蚀能力情况
+计算每一个坐标点的sqrt(x^2+y^2),通过距离划分外、中、内三个区域，不同的区域生成一个slope，然后根据slope和Beam的系数生成Beam_profile
+Slope和Beam_profile之间的关系也需要重新考虑，当前是利用Slope和Beam_profile的Peak点之间的简单倍数作为系数，后续需要考虑使用Beam_profile在整个Beam区域的整体累加作用来作为系数
+即将Beam_profile中的每一个点的数值的总和与slope的倍数作为系数。
+
+markdown by Zhou Boyang20260718
